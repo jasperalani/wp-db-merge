@@ -12,3 +12,6 @@ Merge a non-multi site database into a multi site database
     to a file for execution later.
  7. Set `$options['data']['name']` to an arbitrary name.
  8. Run `merge.php` using the php executable
+
+## Caution:
+Create backups of your databases before using this tool!
