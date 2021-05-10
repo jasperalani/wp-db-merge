@@ -104,7 +104,7 @@ function use_old() {
 
 function mysqldump( $database, $table_names, $output_file ) {
 	global $options;
-	exec( "mysqldump --defaults-extra-file='{$options['data']['mariadb_extra_file']}' --host='127.0.0.1' $database $table_names > $output_file" );
+	exec( "mysqldump --defaults-extra-file='{$options['data']['mariadb_extra_file']}' --host='{$options['connection']['host']}' $database $table_names > $output_file" );
 }
 
 function sed( $search, $replace, $input_file ) {
@@ -117,7 +117,7 @@ function mv( $file, $rename ) {
 
 function mysqlimport( $database, $file ) {
 	global $options;
-	exec( "mysql --defaults-extra-file='{$options['data']['mariadb_extra_file']}' --host='127.0.0.1' $database < $file" );
+	exec( "mysql --defaults-extra-file='{$options['data']['mariadb_extra_file']}' --host='{$options['connection']['host']}' $database < $file" );
 }
 
 function delete_file( $file ) {
