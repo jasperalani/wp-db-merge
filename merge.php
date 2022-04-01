@@ -24,14 +24,14 @@ $options = [
 	'connection' => [
 		'host' => '127.0.0.1',
 		'user' => 'root',
-		'pass' => 'rootpass'
+		'pass' => 'root'
 	],
 	'databases'  => [
-		'single'    => 'elephantlegacy',
-		'multisite' => 'elephant',
+		'single'    => 'single_db',
+		'multisite' => 'multisite_db',
 	],
 	'data'       => [
-		'name'               => 'elephant_brand_merge',
+		'name'               => 'combine_websites',
 		'blog_id'            => 1,
 		'mariadb_extra_file' => '~/.local.options',
 		'output_author_sql'  => true,
