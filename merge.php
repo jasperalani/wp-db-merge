@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Import.php
+ * merge.php
  * Imports a non-multisite wordpress database into a multisite wordpress database.
  *
  * By Jasper Alani <jasperalani@gmail.com> <github.com/jasperalani>
