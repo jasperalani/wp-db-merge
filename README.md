@@ -1,5 +1,5 @@
 # wp-db-merge
-Merge a non-multi site database into a multi site database
+Merge a single site database into a multi site database
 
 ## Setup:
  1. Fill out `$options['connection']`
